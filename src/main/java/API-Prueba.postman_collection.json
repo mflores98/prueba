@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "bb4b73fc-aed9-4303-a678-53b87a260f00",
+		"name": "API-Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/solucion-api/rest/test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/solucion-api/rest/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"solucion-api",
+						"rest",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/solucion-api/tipo/findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/solucion-api/tipo/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"solucion-api",
+						"tipo",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guardar auto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"marca\":\"am\",\n    \"placa\":\"234D\",\n    \"idTipo\":\"1\",\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/solucion-api/auto/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"solucion-api",
+						"auto",
+						"save"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
